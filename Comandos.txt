@@ -1,0 +1,11 @@
+git init -> empezar en la carpeta un repositorio, es una base de datos
+git add nombreArchivo -> la base de datos ahora sabe que existe este archivo
+git commit -m "comentario" -> este envia el archivo/cambios a la base de datos
+   Ahora se puede realizar cambios, pero no se guardan en el repositorio
+git add . -> anhadir todos los cambios realizados en esa carpeta
+git commit -m "segundo comentario" 
+git status -> revisar estado del repositorio
+git show -> todos los cambios hechos, quien los hizo, cuando
+git log nombreArchivo -> historial de ese archivo
+git  push -> enviar a un repositorio remoto
+git pull -> obtener desde un repositorio remoto
