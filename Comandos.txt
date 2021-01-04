@@ -31,3 +31,12 @@ git reset --hard -> elimina absolutamente todo sin la posibilidad de recuperar d
 git reset --soft -> se borra el historial pero mantiene archivos en staging, todo se aplica desde un nuevo commit
 git reset --head -> Saca archivos de staging, no borra, esto solo sirve para que los cambios no se
                      envien con el ultimo commit que hagamos, con //git add// podemos incluirlos de nuevo
+
+FLUJO DE TRABAJO REMOTO
+git add
+git commit
+git push -> todo esto para enviar a un servidor remoto "github, gitlab, bitbucket o uno propio"
+
+1. git fetch -> para traer archivos del servidor a local pero sin fusionar en disco duro
+2. git merge -> para colocar los archivos del servidor en disco duro, o sea, fusionarlos con mi base local
+git pull -> resume los anteriores comandos
