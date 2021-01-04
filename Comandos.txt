@@ -7,7 +7,7 @@ git commit -m "segundo comentario"
 git status -> revisar estado del repositorio
 git show -> todos los cambios hechos, quien los hizo, cuando
 git log nombreArchivo -> historial de ese archivo
-git  push -> enviar a un repositorio remoto
+git push -> enviar a un repositorio remoto
 git pull -> obtener desde un repositorio remoto
 
 git reset --hard -> elimina todo
@@ -16,3 +16,18 @@ git checkout version -> permite revisar esa version sin modificar la version act
 git checkout master -> permite volver a la version actual
 Hacer git add desde una version anterior, actualiza la rama principal con la version anterior
 y cualquier cambio hecho desde ahi en adelante
+
+git rm permite borrar el archivo de git pero no elimina su historial en el sistema de versiones
+puede ser recuperado con git checkout
+
+git rm --cached -> elimina los archivos de staging y del proximo commit, queda en disco duro
+git rm --force -> elimina los archivos de git y del disco duro. Se puede recuperar pero con comandos
+   complejos
+
+git reset -> Nos permite volver a versiones anteriores pero sin la posibilidad de regresar a la version
+actual
+
+git reset --hard -> elimina absolutamente todo sin la posibilidad de recuperar de alguna manera
+git reset --soft -> se borra el historial pero mantiene archivos en staging, todo se aplica desde un nuevo commit
+git reset --head -> Saca archivos de staging, no borra, esto solo sirve para que los cambios no se
+                     envien con el ultimo commit que hagamos, con //git add// podemos incluirlos de nuevo
