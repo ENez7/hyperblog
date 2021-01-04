@@ -11,3 +11,6 @@ git  push -> enviar a un repositorio remoto
 git pull -> obtener desde un repositorio remoto
 
 git reset --hard -> elimina todo
+
+git checkout version -> permite revisar esa version sin modificar la version actual
+git checkout master -> permite volver a la version actual
