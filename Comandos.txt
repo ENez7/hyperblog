@@ -9,3 +9,5 @@ git show -> todos los cambios hechos, quien los hizo, cuando
 git log nombreArchivo -> historial de ese archivo
 git  push -> enviar a un repositorio remoto
 git pull -> obtener desde un repositorio remoto
+
+git reset --hard -> elimina todo
