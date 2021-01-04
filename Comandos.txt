@@ -46,3 +46,9 @@ git push -> todo esto para enviar a un servidor remoto "github, gitlab, bitbucke
 git pull -> resume los anteriores comandos
 
 ------------------------------------------------
+
+RAMAS
+git branch "nombre" -> creacion de nueva rama
+git checkout "nombre" -> cambiar de ramas, usar //git status// para verificar la rama actual
+git add, git commit normales
+git checkout master -> volver a la rama maestra
