@@ -53,4 +53,4 @@ git checkout "nombre" -> cambiar de ramas, usar //git status// para verificar la
 git add, git commit normales
 git checkout master -> volver a la rama maestra
 
-git merge "mensaje" -> fusiona dos ramas, generalmente la master con alguna otra
+git merge "rama" -> fusiona dos ramas, generalmente la master con alguna otra
