@@ -14,3 +14,5 @@ git reset --hard -> elimina todo
 
 git checkout version -> permite revisar esa version sin modificar la version actual
 git checkout master -> permite volver a la version actual
+Hacer git add desde una version anterior, actualiza la rama principal con la version anterior
+y cualquier cambio hecho desde ahi en adelante
