@@ -74,4 +74,10 @@ git remote -v
 git remote rm origin
 git remote add origin https://USER:PASS@github.com/username/reposname.git
 --------------------------
+Tercero: Traer la versión del repositorio remoto y
+hacer merge para crear un commit con los archivos
+de ambas partes. Podemos usar git fetch y git merge
+o solo el git pull con el flag --allow-unrelated-histories:
+git pull origin master --allow-unrelated-histories
+--------------------------
 git push origin master
