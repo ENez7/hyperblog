@@ -61,3 +61,17 @@ CONFLICTOS
 Conflicto generado, cambios en las mismas lineas, se debe decidir que codigo dejar
 Una vez arreglado el codigo, se debe hacer un add y commit para que los cambios se guarden
 en el repo local.
+
+------------------------------------------------
+
+SUBIR REPO LOCAL A REMOTO
+Crear repo remoto, obtener enlace HTML
+git remote add origin "ENLACE"
+-------VERIFICACION-------
+git remote
+git remote -v
+-------CONFLICTOS (NO HACE PUSH)-------
+git remote rm origin
+git remote add origin https://USER:PASS@github.com/username/reposname.git
+--------------------------
+git push origin master
