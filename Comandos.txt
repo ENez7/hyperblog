@@ -97,3 +97,12 @@ EXP     : ssh-keygen -t "algoritmoUsado" -b "complejidadAlgo" -C "correoGithub"
 >  eval $(ssh-agent -s)
 6. Agregar la llave a ese servidor
 > ssh-add "direccion de la llave"
+
+//////// AVISO : CREAR LLAVE PRIVADA Y PUBLICA POR CADA COMPUTADOR QUE USE ////////
+
+7. Agregar la llave SSH a nuestra cuenta en Github
+8. Cambiar link del repositorio (git bash) por el de SSH de Github
+>  git remote set-url origin "ssh de github"
+git remote set-url "repositorio a trabajar" "ssh de github"
+
+//////// AVISO : REALIZAR UN PULL ANTES DE HACER UN PUSH ////////
