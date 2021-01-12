@@ -91,7 +91,7 @@ git push origin master
 /// LAS LLAVES NO SE CREAN POR REPOSITORIO, SE CREAN POR PERSONA ///
 COMANDO : ssh-keygen -t rsa -b 4096 -C "nenrique0112@gmail.com"
 EXP     : ssh-keygen -t "algoritmoUsado" -b "complejidadAlgo" -C "correoGithub"
-3. Escoger ubicacion de guardado de llave ssh (se recomienda dejarlo en home del proyecto)
+3. Escoger ubicacion de guardado de llave ssh (se recomienda dejarlo en home del usuario)
 4. Escribir passphrase "password con espacios"
 5. Revisar que el servidor de llaves local este encendido
 >  eval $(ssh-agent -s)
