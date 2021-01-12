@@ -10,6 +10,9 @@ git log nombreArchivo -> historial de ese archivo
 git push -> enviar a un repositorio remoto
 git pull -> obtener desde un repositorio remoto
 
+git config --global user.name "new name"
+git config --global user.email "new email" 
+
 git reset --hard -> elimina todo
 
 git checkout version -> permite revisar esa version sin modificar la version actual
@@ -81,3 +84,16 @@ o solo el git pull con el flag --allow-unrelated-histories:
 git pull origin master --allow-unrelated-histories
 --------------------------
 git push origin master
+
+-------CONFIGURACION LLAVES SSH LOCALES-------
+1. Crear llave privada y publica
+2. Enviar llave publica al repo remoto
+/// LAS LLAVES NO SE CREAN POR REPOSITORIO, SE CREAN POR PERSONA ///
+COMANDO : ssh-keygen -t rsa -b 4096 -C "nenrique0112@gmail.com"
+EXP     : ssh-keygen -t "algoritmoUsado" -b "complejidadAlgo" -C "correoGithub"
+3. Escoger ubicacion de guardado de llave ssh (se recomienda dejarlo en home del proyecto)
+4. Escribir passphrase "password con espacios"
+5. Revisar que el servidor de llaves local este encendido
+>  eval $(ssh-agent -s)
+6. Agregar la llave a ese servidor
+> ssh-add "direccion de la llave"
