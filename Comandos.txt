@@ -142,3 +142,11 @@ Subir el tag a Github
 3. git push origin "rama"
 4. git checkout master
 5. git merge "rama" -m "mensaje"
+
+----GIT CLEAN----
+Sirve para borrar archivos que se crearon accidentalmente o simplemente se los
+quiere eliminar
+> git clean --dry-run : sirve para saber que archivos estamos borrando
+//// AVISO : SE DEBE TOMAR EN CUENTA EL ARCHIVO .gitignore Y QUE GIT NO TOMA EN CUENTA
+             LAS CARPETAS, SOLO LOS ARCHIVOS
+> git clean -f : esto se hace para confirmar el comando y proceder a eliminar archivos
