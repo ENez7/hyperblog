@@ -155,3 +155,10 @@ quiere eliminar
 Sirve para traer a la rama actual un commit viejo de otra rama
 > (master) git cherry-pick "idCommitViejo"
 //// AVISO : CHERRY-PICK ES UNA MALA PRACTICA ////
+
+----GIT AMEND----
+Sirve para arreglar errores del tipo mensajes erroneos (-m "footer cambiado" / pero no cambie el footer)
+1. Hacer lo que deberia estar en el commit anterior (cambiar el footer)
+2. Añadir el cambio realizado (git add archivoTrabajado)
+3. Chequear (git status)
+4. git commit --amend (cambiar el mensaje si es necesario)
