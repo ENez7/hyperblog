@@ -136,3 +136,9 @@ Subir el tag a Github
 -------FLUJO DE TRABAJO PROFESIONAL-------
 ----MERGE DE RAMAS DE DEV. A MASTER----
 //// AVISO: LOS ARCHIVOS BINARIO NO DEBEN IR EN EL REPOSITORIO ////
+1. git checkout "rama"
+2. git pull origin "rama"
+   // HACER EL TRABAJO NECESARIO
+3. git push origin "rama"
+4. git checkout master
+5. git merge "rama" -m "mensaje"
