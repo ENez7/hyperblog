@@ -106,3 +106,20 @@ EXP     : ssh-keygen -t "algoritmoUsado" -b "complejidadAlgo" -C "correoGithub"
 git remote set-url "repositorio a trabajar" "ssh de github"
 
 //////// AVISO : REALIZAR UN PULL ANTES DE HACER UN PUSH ////////
+
+-------TAGS Y VERSIONES-------
+> alias : permite poner un nombre mas corto a un comando bastante largo
+alias arbolito="git log --all --graph --decorate --oneline"
+Se usa con solo poner el nombre "arbolito"
+
+----CREACION DE TAGS----
+> git tag -a "nombre de tag" -m "mensaje para el commit" -hash-
+              Por convencion se usa v0.x
+Revisar los tags creados
+> git show-ref --tags
+Subir el tag a Github
+> git pull origin master
+> git push origin --tags
+----ERROR EN LA CREACION DE TAG O ELIMINAR----
+> git tag -d "nombreTag" // ESTO NO LO ELIMINA DE GITHUB
+> git push origin :refs/tags/"nombreTag"
