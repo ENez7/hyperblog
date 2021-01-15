@@ -37,6 +37,7 @@ git reset --head -> Saca archivos de staging, no borra, esto solo sirve para que
 
 git commit -am "mensaje" -> abreviacion de add y commit, solo para archivos con add ya hechos anteriormente
 
+gitk -> Abre interfaz grafica de los cambios hechos en git
 ------------------------------------------------
 
 FLUJO DE TRABAJO REMOTO
@@ -123,3 +124,15 @@ Subir el tag a Github
 ----ERROR EN LA CREACION DE TAG O ELIMINAR----
 > git tag -d "nombreTag" // ESTO NO LO ELIMINA DE GITHUB
 > git push origin :refs/tags/"nombreTag"
+
+/// SUBIR RAMAS A GITHUB
+> git push origin "nombreRama"
+
+-------MULTIPLES COLABORADORES EN GITHUB-------
+1. Settings del repo en github
+2. Collaborators
+3. Enter collaborator's username/full name/email and add him/her
+
+-------FLUJO DE TRABAJO PROFESIONAL-------
+----MERGE DE RAMAS DE DEV. A MASTER----
+//// AVISO: LOS ARCHIVOS BINARIO NO DEBEN IR EN EL REPOSITORIO ////
