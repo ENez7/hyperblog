@@ -97,7 +97,7 @@ EXP     : ssh-keygen -t "algoritmoUsado" -b "complejidadAlgo" -C "correoGithub"
 5. Revisar que el servidor de llaves local este encendido
 >  eval $(ssh-agent -s)
 6. Agregar la llave a ese servidor
-> ssh-add "direccion de la llave"
+> ssh-add "ruta de la llave privada"
 
 //////// AVISO : CREAR LLAVE PRIVADA Y PUBLICA POR CADA COMPUTADOR QUE USE ////////
 
