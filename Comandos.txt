@@ -90,8 +90,13 @@ git push origin master
 1. Crear llave privada y publica
 2. Enviar llave publica al repo remoto
 /// LAS LLAVES NO SE CREAN POR REPOSITORIO, SE CREAN POR PERSONA ///
-COMANDO : ssh-keygen -t rsa -b 4096 -C "nenrique0112@gmail.com"
-EXP     : ssh-keygen -t "algoritmoUsado" -b "complejidadAlgo" -C "correoGithub"
+############################
+Generate key pair, github prefers the "Ed25519 algorithm"
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+It still allows using rsa for systems that don't support Ed25519
+    ssh-keygen -t rsa -b 4096 -C “youremail@example.com”
+############################
+
 3. Escoger ubicacion de guardado de llave ssh (se recomienda dejarlo en home del usuario)
 4. Escribir passphrase "password con espacios"
 5. Revisar que el servidor de llaves local este encendido
